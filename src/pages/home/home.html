@@ -1,0 +1,14 @@
+<ion-header>
+	<ion-navbar hideBackButton>
+		<ion-title>
+			iNota
+			<ion-icon float-right name="md-add-circle" (click)="goToNewNote()"></ion-icon>
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<note-card *ngFor="let note of notes" [note] = "note"></note-card>
+
+</ion-content>

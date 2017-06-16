@@ -1,0 +1,14 @@
+<!-- Generated template for the NoteCardComponent component -->
+<ion-card>
+
+	<ion-card-header>
+		{{ note.title }}
+	</ion-card-header>
+
+	<ion-card-content>
+		{{ note.text }}
+		<button (click)="editarNota( note.id )" ion-button small block color="secondary">Editar {{note.id}}</button>
+		<button (click)="borrarNota( note.id )" ion-button small block color="danger">Borrar {{note.id}}</button>
+	</ion-card-content>
+
+</ion-card>
